@@ -48,7 +48,7 @@ for i in range (2,32): #not considering the ID column and the diagnosis
     print(df.columns[i])
     print(df.iloc[i].describe())
     print("\n")
-'''
+
 ##############################################################################################################3
 #plot bar plots for each columns
 
@@ -125,7 +125,7 @@ for i, feature in enumerate(features):
 
 plt.tight_layout()
 plt.show()
-'''
+
 #####################################################################################################################################
 
 #Heatmap
@@ -138,7 +138,7 @@ sns.heatmap(corr,
 sns.plt.title('Heatmap of Correlation Matrix')
 plt.show()
 #######################################################################################################333
-'''
+
 #boxplot
 print("Boxplot of the data")
 features_mean= list(df.columns[2:12])
@@ -328,7 +328,7 @@ print("correlation between diagnosis and Fractal Dimension:",corr_fd_worst)
 print("\n\n")
 
 ##############################################################################################################################
-'''
+
 #X and y values
 X = df1.iloc[:,3:32]
 y = df1['diagnosis']
